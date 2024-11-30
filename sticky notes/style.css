@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('pexels-minan1398-1629212.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+   
+
+h4{
+   
+    text-align: center;
+    font-size: 3rem;
+    font-family: monospace;
+  color: whitesmoke;
+    
+    font-weight: bold;
+    
+}
+
+h4{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    
+    
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.sticky{
+  background-color: #db96b9;
+  height: 200px;
+  padding: 13px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+
+.btnadd{
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: hsl(296, 96%, 48%);
+    cursor: pointer;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.btnadd:hover{
+    background-color: hsl(323, 81%, 38%);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.sticky{
+    transform: rotate(-10deg);
+    position: relative;
+  }
+
+ .sticky:hover,.sticky:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1);
+    position:relative;
+    z-index:5;
+  }
+
+
+.sticky:nth-child(even) {
+    position:relative;
+    top:5px;
+    background:#cfc;
+  }
+  .sticky:nth-child(3n) {
+    position:relative;
+    top:-5px;
+    background:#ccf;
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 12px;
+      width: 100%;
+      margin: 0;
+    }
+
+h4{
+    
+    position:sticky;
+    font-size: 2rem;
+    font-weight:900;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+}
+
+
+/* CSS */
+.btnadd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family:monospace;
+
+    height: 100px;
+    text-align: center;
+    background-color: rgba(139, 0, 139, 0.952);
+
+}
+
+.btn:hover{
+    background-color: rgba(0, 5, 139, 0.589);
+}
+
+.sticky{
+    background-color: #edeced;
+    height: 100px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+  
+  }
+  .sticky{
+    transform: none;
+    position: relative;
+  }
+
+
+
+
+  
+  }
